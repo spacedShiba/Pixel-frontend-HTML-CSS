@@ -1,0 +1,28 @@
+.header {
+    background-color:azure;
+    height: 500px;
+  }
+
+  .text_block {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+
+  .button {
+    background-color: orange;
+  }
+
+  .navbar {
+    background-color: lightgrey;
+    height: 30px;
+  }
+
+  .flavour_block {
+    background-color: beige;
+    height: 100px;
+  }
+
+  .start_tracking {
+    background-color: orange;
+    height: 100px;
+  }
