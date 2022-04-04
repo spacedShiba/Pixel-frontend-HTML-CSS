@@ -7,16 +7,22 @@ body {
 }
 
 h1 {
-  font-size: 65pt;
+  font-size: 45pt;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 25pt;
+  font-weight: bold;
+  text-align: center;
 }
 
 p {
   font-size: 24pt;
 }
 
-a {
-  font-size: 30pt;
+nav > a {
+  font-size: 24pt;
 }
 
 .header {
@@ -29,27 +35,84 @@ a {
 
   .text_header {
     width: 50%;
-    padding-left: 50px;
-    padding-top: 30px;
-  }
-
-  .text_block {
-    padding-left: 50px;
+    padding-left: 100px;
     padding-top: 30px;
   }
 
   .button {
-    background-color: orange;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #E67112;
   }
 
-  .navbar {
-    background-color: lightgrey;
-    height: 30px;
+  .button_link {
+    display:block;
+    font-size: 30pt;
+    font-weight: bold;
+    color: white;
+    padding: 20px 56px;
+  }
+
+  .sign_up {
+    display:block;
+    font-size: 24pt;
+    font-weight: bold;
+    color: white;
+    padding: 5px 28px;
+  }
+
+  .nav_list {
+    background-color: white;
+    display:flex;
+    font-size: 24pt;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+  }
+
+  .nav_item {
+    list-style: none;
   }
 
   .flavour_block {
-    background-color: beige;
-    height: 100px;
+    background-color: #132D3F;
+    height: 468px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+
+  .cards {
+    display:flex;
+    font-size: 24pt;
+    justify-content: space-between;
+  }
+
+  .single_card {
+    list-style: none;
+    xxpadding: 62px 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 62px;
+    padding-right: 62px;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .textblock_right {
+    max-width: 1240px;
+    margin: auto;
+    text-align: left;
+
+    xxdisplay:flex;
+    xxjustify-content: space-between;
   }
 
   .start_tracking {
