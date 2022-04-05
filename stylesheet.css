@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+
 body {
   margin: 0px;
   box-sizing: border-box;
@@ -7,22 +17,28 @@ body {
 }
 
 h1 {
-  font-size: 45pt;
-  font-weight: bold;
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 65px;
 }
 
 h2 {
-  font-size: 25pt;
-  font-weight: bold;
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+h3 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 40px;
   text-align: center;
 }
 
 p {
-  font-size: 24pt;
+  font-size: 24px;
 }
 
 nav > a {
-  font-size: 24pt;
+  font-size: 24px;
 }
 
 .header {
@@ -78,41 +94,64 @@ nav > a {
 
   .flavour_block {
     background-color: #132D3F;
-    height: 468px;
+    max-height: 43,3%;
+    padding-top: 12vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
     color: white;
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
   }
 
-  .cards {
-    display:flex;
-    font-size: 24pt;
-    justify-content: space-between;
+  .content {
+    margin:1%
   }
 
-  .single_card {
-    list-style: none;
-    xxpadding: 62px 50px;
+  #cards {
+    display:flex;
+    margin:auto;
+    font-size: 24px;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #cards div {
+    -ms-flex: 1;  /* IE 10 */  
+    flex: 1;
+    width: 484px;
+    height: 588px;
     padding-top: 50px;
-    padding-bottom: 50px;
     padding-left: 62px;
     padding-right: 62px;
     box-shadow: 0px 0px 10px grey;
     border-radius: 45px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 2%;
+    line-height: 34px;
+    overflow-y:initial;
   }
 
-  .textblock_right {
+  #cards div p{
+    font-size: 28px;
+  }
+
+  .right {
     max-width: 1240px;
     margin: auto;
     text-align: left;
 
-    xxdisplay:flex;
-    xxjustify-content: space-between;
+    /*display:flex;
+    justify-content: space-between;*/
+  }
+
+  .left {
+    max-width: 1240px;
+    margin: auto;
+    text-align: right;
+
+    /*display:flex;
+    justify-content: space-between;*/
   }
 
   .start_tracking {
