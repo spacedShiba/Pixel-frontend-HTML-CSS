@@ -13,32 +13,33 @@ body {
   box-sizing: border-box;
 
   font-family: Poppins, sans-serif;
-  color: #132D3F
+  color: #132D3F;
+  font-size: 1.5rem;
 }
 
 h1 {
   font-family: Poppins-Bold, sans-serif;
-  font-size: 65px;
+  font-size: 4rem;
 }
 
 h2 {
   font-family: Poppins-Bold, sans-serif;
-  font-size: 45px;
+  font-size: 2.8rem;
   text-align: center;
 }
 
 h3 {
   font-family: Poppins-Bold, sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 p {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 nav > a {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -46,13 +47,21 @@ nav > a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    height: 100vh;
+    height: 88vh; /*100vh*/
   }
 
   .text_header {
     width: 50%;
     padding-left: 100px;
     padding-top: 30px;
+  }
+
+  @media all and (max-width: 1000px) {
+    .text_header {
+      width: 100%;
+      padding-left: 100px;
+      padding-top: 30px;
+    }
   }
 
   .button {
@@ -64,28 +73,35 @@ nav > a {
 
   .button_link {
     display:block;
-    font-size: 30pt;
+    font-size: 1.88rem;
     font-weight: bold;
     color: white;
     padding: 20px 56px;
   }
 
   .sign_up {
-    display:block;
-    font-size: 24pt;
+    display: block;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
     padding: 5px 28px;
   }
 
+  nav { /* mit javascript erst mitscrollen und dann fixed */
+    position: fixed;
+    width: 100%;
+    margin-left: 0px;
+    height: 90px;
+    z-index: 1;
+  }
+
   .nav_list {
     background-color: white;
     display:flex;
-    font-size: 24pt;
+    font-size: 1.5rem;
     align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
     justify-content: space-between;
+    margin: 0px;
   }
 
   .nav_item {
@@ -110,7 +126,7 @@ nav > a {
   #cards {
     display:flex;
     margin:auto;
-    font-size: 24px;
+    font-size: 1.5rem;
     justify-content: center;
     padding-top: 10vh;
     padding-left: 5vw;
@@ -133,28 +149,106 @@ nav > a {
   }
 
   #cards div p{
-    font-size: 28px;
+    font-size: 1.75rem;
+  }
+
+  img {
+    display: flex;
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    margin: 50px;
   }
 
   .right {
-    max-width: 1240px;
-    margin: auto;
+    display: flex;
+    /*max-width: 1240px;
+    margin: auto;*/
     text-align: left;
 
     /*display:flex;
     justify-content: space-between;*/
   }
 
+  .right div h3 {
+    text-align: left;
+  }
+
   .left {
-    max-width: 1240px;
-    margin: auto;
+    display: block;
+    float: left;
+    /*max-width: 1240px;
+    margin: auto;*/
     text-align: right;
 
     /*display:flex;
     justify-content: space-between;*/
   }
 
+  .left img {
+    display: block;
+    float: right;
+  }
+
+  .left div h3 {
+    text-align: right;
+  }
+
+  .flex_container_column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .flex_container_row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
   .start_tracking {
-    background-color: orange;
-    height: 100px;
+    background-color: #E67112;
+    color: white;
+    height: 414px;
+  }
+
+  #vertical {
+    margin-top: 6%;
+  }
+
+  .start_tracking .button {
+    background-color: white;
+    color:#E67112;
+    padding: 5px 10px;
+    border-radius: 0px;
+    font-weight: bold;
+  }
+
+  #horizontal div {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .img_partner { 
+    display: flex;
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    margin: 20px;
+  }
+
+  .flex_container_row .img_partner {
+    float: left;
+  }
+
+  .partners h3 {
+    text-align: left;
+  }
+
+  .partners a {
+    color: #0EA7BF;
   }
