@@ -38,8 +38,16 @@ p {
   font-size: 1.5rem;
 }
 
-nav > a {
+nav a {
   font-size: 1.5rem;
+}
+
+li a:hover {
+  color: grey;
+}
+
+.active {
+  color: #0EA7BF;
 }
 
 .header {
@@ -64,11 +72,18 @@ nav > a {
     }
   }
 
-  .button {
+  .roundButton {
     display: inline-block;
     text-align: center;
     border-radius: 10px;
     background-color: #E67112;
+  }
+
+  .signUpButton {
+    display: inline-block;
+    text-align: center;
+    background-color: #E67112;
+    margin-right: 60px;
   }
 
   .button_link {
@@ -87,25 +102,55 @@ nav > a {
     padding: 5px 28px;
   }
 
-  nav { /* mit javascript erst mitscrollen und dann fixed */
-    position: fixed;
+  .sign_up:hover{
+    background-color: #e66012;
+    color: white;
+  }
+
+  nav { /* mit javascript erst mitscrollen und dann fixed --> man braucht kein javascript. es gibt sticky*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 100%;
     margin-left: 0px;
     height: 90px;
     z-index: 1;
   }
 
+  .logo{
+    margin: 0;
+    display:flex;
+    height: 50px;
+    width: 280px;
+    object-fit: cover;
+  }
+
   .nav_list {
     background-color: white;
+    list-style: none;
     display:flex;
     font-size: 1.5rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0px;
+    box-shadow: 0px 4px 6px #132d3f13;
   }
 
-  .nav_item {
-    list-style: none;
+  .nav_list li {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  .nav_list li:last-child {
+    margin-left: auto;
+    margin-right: 3%;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #132D3F;
   }
 
   .flavour_block {
@@ -141,7 +186,7 @@ nav > a {
     padding-top: 50px;
     padding-left: 62px;
     padding-right: 62px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 10px 5px #132d3f13;
     border-radius: 45px;
     margin: 2%;
     line-height: 34px;
@@ -150,6 +195,11 @@ nav > a {
 
   #cards div p{
     font-size: 1.75rem;
+  }
+
+  #logLink {
+    text-decoration: none;
+    color: grey;
   }
 
   img {
@@ -220,8 +270,9 @@ nav > a {
 
   .start_tracking .button {
     background-color: white;
+    font-family: Poppins-Bold, sans-serif;
     color:#E67112;
-    padding: 5px 10px;
+    padding: 10px 40px;
     border-radius: 0px;
     font-weight: bold;
   }
