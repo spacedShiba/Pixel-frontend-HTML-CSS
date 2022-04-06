@@ -56,7 +56,7 @@ li a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    height: 88vh; /*100vh*/
+    height: 100vh;
   }
 
 .text_header {
@@ -72,7 +72,6 @@ li a:hover {
     padding-top: 30px;
   }
 }
-
 
   .roundButton {
     display: inline-block;
@@ -104,8 +103,6 @@ li a:hover {
   color: white;
   padding: 5px 28px;
 }
-
-
 
   .sign_up:hover{
     background-color: #e66012;
@@ -262,8 +259,9 @@ img {
 .flex_container_row {
   display: flex;
   flex-direction: row;
+  /* verschiebt ganz viel
   margin-top: 3.5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 5vw;*/
 }
 
 .start_tracking {
@@ -321,11 +319,17 @@ img {
 .partners {
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 0;
+  margin-bottom: 100px;
   /*background-color: coral;*/
 }
 
+.divider {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 hr {
+  /*macht nichts*/
   stroke: 1px solid grey;
 }
 
@@ -349,6 +353,7 @@ hr {
   margin-bottom: 50px;
 }
 
+/* funktioniert nicht*/
 .flex_container_stars {
   display: flex;
   justify-content: flex-start;
@@ -360,6 +365,7 @@ hr {
   height: 30px;
   object-fit: cover;
   margin: 5px;
+  margin-bottom: 50px;
 }
 
 .map {
@@ -369,15 +375,23 @@ hr {
   object-fit: cover;
   margin: 50px;
   margin-top: 0px;
+  display: block;
+  float: right;
 }
 
 .impressum {
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: white;
   background-color: #132D3F;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 70px;
+  display: block;
+  height: 530px;
+}
+
+.impressum_block {
+  width: 70%;
 }
 
 .footer {
@@ -385,7 +399,8 @@ hr {
   padding: 0px;
 }
 
-form .button {
+.subscribe_button {
+  display:flex;
   background-color:#0EA7BF;
   border-radius: 3px;
   padding: 5px;
@@ -393,6 +408,22 @@ form .button {
   padding-right: 25px;
 }
 
-.impressum .flex_container_row {
-  justify-content:space-between;
+form label {
+  font-size: 1.5rem;
+}
+
+input {
+  background-color:#132D3F;
+  color: white;
+  width: 420px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.horizontal_line {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
