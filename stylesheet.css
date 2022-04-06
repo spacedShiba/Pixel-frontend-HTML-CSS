@@ -262,6 +262,8 @@ img {
 .flex_container_row {
   display: flex;
   flex-direction: row;
+  margin-top: 3.5vw;
+  margin-bottom: 5vw;
 }
 
 .start_tracking {
@@ -297,19 +299,40 @@ img {
   object-fit: cover;
   margin: 20px;
   margin-left: 0px;
+  margin-bottom: 88px;
 }
 
-.flex_container_row .img_partner {
-  float: left;
+.img_cert { 
+  display: flex;
+  width: 117px;
+  height: 117px;
+  object-fit: cover;
+  margin: 20px;
+  margin-left: 0px;
+}
+
+.flex_images {
+  display: flex;
+  flex-direction: row;
+  margin:0;
+  /*background-color: darkolivegreen;*/
 }
 
 .partners {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 0;
+  /*background-color: coral;*/
 }
 
-.partners h3 {
+hr {
+  stroke: 1px solid grey;
+}
+
+.flex_container_row h3 {
   text-align: left;
+  margin-bottom: 0;
+  /*background-color: aqua;*/
 }
 
 .partners a {
