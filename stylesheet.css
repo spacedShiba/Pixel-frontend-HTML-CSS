@@ -175,11 +175,13 @@ li a:hover {
 #cards {
   display:flex;
   margin:auto;
+  margin-bottom: 8vw;
   font-size: 1.5rem;
   justify-content: center;
   padding-top: 10vh;
   padding-left: 5vw;
   padding-right: 5vw;
+  z-index: 1;
 }
 
 #cards div {
@@ -190,15 +192,18 @@ li a:hover {
   padding-top: 50px;
   padding-left: 62px;
   padding-right: 62px;
+  box-sizing: border-box;
   box-shadow: 0px 0px 10px 5px #132d3f13;
   border-radius: 45px;
   margin: 2%;
   line-height: 34px;
   overflow-y:initial;
+  background-color: white;
 }
 
 #cards div p{
   font-size: 1.75rem;
+  margin-bottom: 0;
 }
 
 #logLink {
@@ -212,6 +217,42 @@ img {
   height: 380px;
   object-fit: cover;
   margin: 50px;
+}
+
+#hex3{
+  width: 20vw;
+  height: 20vw;
+  margin: 0;;
+  position: absolute;
+  object-fit: fill;
+  left: -4%;
+  top: 140%;
+  z-index: 0;
+  /*background-color: aqua;*/
+}
+
+#hex4{
+  width: 20vw;
+  height: 20vw;
+  margin: 0;;
+  position: absolute;
+  object-fit: fill;
+  right: 1%;
+  top: 217%;
+  z-index: 0;
+  /*background-color: aqua;*/
+}
+
+#hex5{
+  width: 5vw;
+  height: 5vw;
+  margin: 0;;
+  position: absolute;
+  object-fit: fill;
+  right: -17%;
+  top: 0%;
+  z-index: 0;
+  /*background-color: aqua;*/
 }
 
 .right {
@@ -274,12 +315,9 @@ img {
   margin-bottom: 5vw;
   margin-left: 7%;
   margin-right: 7%;
-  xxbackground-color: aqua;
+  
 }
 
-.container_certifications div {
-  xxbackground-color: chartreuse;
-}
 
 .start_tracking {
   background-color: #E67112;
@@ -315,7 +353,6 @@ img {
   margin: 20px;
   margin-left: 0px;
   margin-bottom: 103px;
-  xxmargin-top: 10px;
 }
 
 .partners a {
@@ -349,10 +386,8 @@ img {
 }
 
 .partners {
-  xxmargin-left: 10%;
-  xxmargin-right: 10%;
   margin-bottom: 100px;
-  xxbackground-color: coral;
+  /*background-color: coral;*/
 }
 
 .divider {
