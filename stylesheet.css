@@ -52,7 +52,7 @@ li a:hover {
 
 .header {
     display: flex;
-    background-image: url(building.jpg);
+    background-image: url(images-icons/building.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
