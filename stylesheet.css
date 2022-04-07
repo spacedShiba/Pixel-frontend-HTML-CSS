@@ -264,6 +264,13 @@ img {
   margin-bottom: 5vw;*/
 }
 
+.container_certifications {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3.5vw;
+  margin-bottom: 5vw;
+}
+
 .start_tracking {
   background-color: #E67112;
   color: white;
@@ -333,7 +340,7 @@ hr {
   stroke: 1px solid grey;
 }
 
-.flex_container_row h3 {
+.container_certifications h3 {
   text-align: left;
   margin-bottom: 0;
   /*background-color: aqua;*/
