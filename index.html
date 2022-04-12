@@ -14,37 +14,55 @@
 </head>
 <body>
 
-    <!--header-->
-    <div class="myHeader">header</div>
+  <!--header-->
+    <div class="container-fluid pt-5 myHeader">
+      <div class="container">
+        <div class="text-header pt-5">
+          <h1><b>Lorem ipsum dolor sit amet</b></h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+          <button class="btn btn-primary">
+            <b>Buy Now</b>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="gradient"></div>
+    <img src="images-icons/down-arrow.svg" id="down-arrow">
+    
+    <!--hexagon-->
+    <img src="images-icons/hex4.svg" id="hex-header-oben">
+    <img src="images-icons/hex5.svg" id="hex-header-unten">
 
     <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src=logo.jpg id="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produkt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Preise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ressourcen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Über Uns</a>
-                    </li>
-                </ul>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary me-md-2" type="button">Sign Up</button>
-                    <button type="button" class="btn btn-link">Login</button>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src=logo.jpg id="logo"></a>
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produkt</a>
+             </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Preise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ressourcen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Über Uns</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-primary me-md-2" type="button">Sign Up</button>
+          <button type="button" class="btn btn-link">Login</button>
+        </div>
+      </div>
     </nav>
 
     <!--flavour block-->
@@ -54,8 +72,7 @@
     </div>
 
     <!--hexagon-->
-    <img id="hex3" src="images-icons/hex3.svg">
-    <img id="hex4" src="images-icons/hex2.svg">
+    <img src="images-icons/hex3.svg" id="hex-cards-oben">
     
     <!--cards-->
     <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 my-1">
@@ -79,10 +96,13 @@
         </div>
     </div>
 
+    <!--hexagon-->    
+    <img src="images-icons/hex2.svg" id="hex-cards-unten">
+
     <!--texte-->
     <div class="container d-grid gap-1">
       <div class="my-5">
-        <img src="desk.jpg" class="float-start me-4 desk">
+        <img src="images-icons/home1.jpg" class="float-start me-4 desk">
         <div>
           <h3>Sed diam nonumy eirmod tempor invidunt ut labore</h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
@@ -90,7 +110,7 @@
       </div>
    
       <div class="my-5">
-        <img src="desk.jpg" class="float-end ms-4 desk">
+        <img src="images-icons/home1.jpg" class="float-end ms-4 desk">
         <div>
           <h3>Dolore magna aliquyam erat, sed diam voluptua</h3>
           <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -98,7 +118,7 @@
       </div>
       
       <div class="my-5">
-        <img src="desk.jpg" class="float-start me-4 desk">
+        <img src="images-icons/home1.jpg" class="float-start me-4 desk">
         <div>
           <h3>Sed diam nonumy eirmod tempor invidunt ut labore</h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
@@ -111,82 +131,87 @@
 
       <!--start tracking-->  
       <div class="container-fluid py-5 start-tracking">
-        <h2 class="text-center">START TRACKING TODAY!</h2>
-        <img src="images-icons/hex1.svg" id="hex5">
+        <h2 class="text-center"><b>START TRACKING TODAY!</b><img src="images-icons/hex1.svg" id="hex-start-tracking"></h2>
         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-          <button class="btn btn-secondary">Buy Now</button>
+          <button class="btn btn-secondary"><b>Buy Now</b></button>
         </div>
       </div>
     
-      <!--partners-->
-      <div class="container d-flex flex-row">
-        <div class="partners">
-          <h3>Our Partners</h3>
-          <div class="flex_images">
-            <img src="images-icons/part1.png" class="img_partner">
-            <img src="images-icons/part2.png" class="img_partner">
-            <img src="images-icons/part3.png" class="img_partner">
+      <div class="container py-5 d-flex flex-row justify-content-between">
+        <!--partners-->
+        <div class="py-3">
+          <h3><b>Our Partners</b></h3>
+          <div>
+            <img src="images-icons/part1.png" class="img-partner mb-5 mt-3 me-3">
+            <img src="images-icons/part2.png" class="img-partner mb-5 mt-3 me-4">
+            <img src="images-icons/part3.png" class="img-partner mb-5 mt-3">
           </div>
-            <a><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow"></a>
+            <a class="light-blue"><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
         </div>
     
-        <hr class="divider">
+        <!--CHANGE TO VERTICAL
+        <hr class="">-->
     
         <!--certifications-->
-        <div class="partners">
-          <h3>Our Certifications</h3>
-          <div class="flex_images">
-            <img src="images-icons/cert1.png" class="img_cert">
-            <img src="images-icons/cert2.png" class="img_cert">
-            <img src="images-icons/cert3.png" class="img_cert">
-            <img src="images-icons/cert4.png" class="img_cert">
+        <div class="py-3">
+          <h3><b>Our Certifications</b></h3>
+          <div>
+            <img src="images-icons/cert1.png" class="img-cert mb-3 mt-3 me-2">
+            <img src="images-icons/cert2.png" class="img-cert mb-3 mt-3 me-2">
+            <img src="images-icons/cert3.png" class="img-cert mb-3 mt-3 me-2">
+            <img src="images-icons/cert4.png" class="img-cert mb-3 mt-3">
           </div>
-          <a><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow"></a>
+          <a class="light-blue"><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
         </div>
       </div>
     
-      <div class="impressum">
-        <div class="flex_container_row">
-          <div class="impressum_block">
-            <ul class="star_list">
-              <li class="star"><img src="images-icons/star.svg"></li>
-              <li class="star"><img src="images-icons/star.svg"></li>
-              <li class="star"><img src="images-icons/star.svg"></li>
-              <li class="star"><img src="images-icons/star.svg"></li>
-              <li class="star"><img src="images-icons/star.svg"></li>
-              <li id="rating">Google Rating <b>4.5</b>/5</li>
+      <!--impressum-->
+      <div class="container-fluid pt-5 pb-3 flavour-block">
+        <div class="container pt-3 pb-2 d-flex flex-row justify-content-between">
+          <!--left side-->
+          <div class="">
+            <!--rating-->
+            <ul class="d-flex flex-row list-unstyled">
+              <li class="me-3"><img src="images-icons/star.svg"></li>
+              <li class="me-3"><img src="images-icons/star.svg"></li>
+              <li class="me-3"><img src="images-icons/star.svg"></li>
+              <li class="me-3"><img src="images-icons/star.svg"></li>
+              <li class="me-3"><img src="images-icons/star.svg"></li>
+              <li>Google Rating <b>4.5</b>/5</li>
             </ul>
-    
-            <form action="">
-              <label for="subscribe"><b>Subscribe to PixelMechanics vie Email</b></label>
-              <div class="flex_container_row">
-                <input type="text" id="subscribe" name="subscribe" value="Subscribe to PixelMechanics vie Email"></br>
-                <div class="subscribe_button"><b>Subscribe</b></div>
+
+            <!--form-->
+            <form action="" class="">
+              <label for="subscribe" class="mb-2"><b>Subscribe to PixelMechanics vie Email</b></label>
+              <div class="">
+                <input type="text" class="form-control my-form" id="staticEmail2" placeholder="Subscribe to PixelMechanics vie Email">
+                <button type="submit" class="btn btn-tertiary btn-position"><b>Subscribe</b></button>
               </div>
             </form>
     
-            <div class="flex_container_row">
-              <div class="flex_container_column">
+            <!--social media-->
+            <div class="d-flex flex-row">
+              <div class="">
                 <span>Connect with us</span></br>
                 <div class="flex_container_row">
-                  <img src="images-icons/f-icon.svg" alt="Facebook" class="social_media_logo">
-                  <img src="images-icons/in-icon.svg" alt="LinkedIn" class="social_media_logo">
-                  <img src="images-icons/insta-icon.svg" alt="Instagram" class="social_media_logo">
-                  <img src="images-icons/bird-site-icon.svg" alt="Twitter" class="social_media_logo">
+                  <img src="images-icons/f-icon.svg" alt="Facebook" class="social-media-logo me-1 mt-2 mb-5">
+                  <img src="images-icons/in-icon.svg" alt="LinkedIn" class="social-media-logo me-1 mt-2 mb-5">
+                  <img src="images-icons/insta-icon.svg" alt="Instagram" class="social-media-logo me-1 mt-2 mb-5">
+                  <img src="images-icons/bird-site-icon.svg" alt="Twitter" class="social-media-logo mt-2 mb-5">
                 </div>
               </div>
     
-              <div class="call_mail">
+              <div class="px-5 mx-5">
                 <span><b>Call:</b> +49 911 1313 3780</span></br>
                 <span><b>Email:</b> hello@pixelmechanics.de</span>
               </div>
             </div>
     
-            <div class="flex_container_row">
+            <div class="d-flex flex-row">
               <div>Copyright</div>
-              <hr width="1" size="15" class="copyright_divider">
+              <hr width="1" size="15" class="mx-4">
               <div>imprint</div>
-              <hr width="1" size="15" class="copyright_divider">
+              <hr width="1" size="15" class="mx-4">
               <div>Career</div>
             </div>
     
@@ -195,6 +220,7 @@
             <span>&#169; 2021 pixelmechanics. All rights reserved.</span>
           </div>
     
+          <!--right side-->
           <img src="images-icons/worldmap.svg" class="map">
     
         </div>

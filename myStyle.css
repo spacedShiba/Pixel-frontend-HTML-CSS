@@ -1,7 +1,43 @@
 /*header*/
 .myHeader {
-    background-color:lightsteelblue;
+    background-image: url(images-icons/building.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     height: 100vh;
+}
+
+.text-header {
+    color: white;
+    width: 40%;
+}
+
+.gradient {
+    background: linear-gradient(to bottom, rgba(255, 99, 71, 0), #132D3F);
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0px;
+}
+
+#down-arrow {
+    position:absolute;
+    bottom: 30px;
+}
+  
+#hex-header-oben {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    position: absolute;
+    left: 45%;
+    top: 0px;
+}
+
+#hex-header-unten {
+    position: absolute;
+    bottom: -130px;
+    right: 0px;
 }
 
 /*navbar*/
@@ -44,7 +80,7 @@
 }
 
 .card-shadow {
-  box-shadow: 0px 0px 10px 5px #132d3f13;
+    box-shadow: 0px 0px 10px 5px #132d3f13;
 }
 
 .desk {
@@ -53,11 +89,37 @@
     object-fit: cover; 
 }
 
+#hex-cards-oben {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    position: absolute;
+    left: -40px;
+    bottom: -375px;
+}
+
+#hex-cards-unten {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    position: absolute;
+    right: 10px;
+    bottom: -600px;
+}
+
 /*footer*/
 /*start tracking*/
 .start-tracking {
     background-color: #E67112;
     color: white;
+}
+
+#hex-start-tracking {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    position: relative;
+    bottom: 8px;
 }
 
 .btn-secondary {
@@ -68,4 +130,69 @@
 .btn-secondary:hover {
     background-color: #fff6ee;
     color: #E67112;
+}
+
+/*partners*/
+.img-partner {
+    height: 40px;
+    width: 160px;
+    object-fit: contain;
+}
+
+/*certifications*/
+.img-cert {
+    height: 80px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.light-blue {
+    color: #0EA7BF;
+    text-decoration: none;
+}
+.light-blue:hover {
+    color: #0d8ea2;
+    text-decoration: none;
+}
+
+.img_arrow {
+    height: 15px;
+    width: 20px;
+    object-fit: contain;
+}
+
+/*from*/
+.my-form {
+    background-color: #132D3F;
+    width: 320px;
+    height: 36px;
+}
+
+.btn-tertiary {
+    background-color: #0EA7BF;
+    color: white;
+    border-style: none;
+}
+.btn-tertiary:hover {
+    background-color: #0d8ea2;
+    color: white;
+}
+.btn-position {
+    position: relative;
+    bottom: 36px;
+    left: 300px;
+}
+
+/*social media*/
+.social-media-logo {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+/*map*/
+.map {
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
 }
