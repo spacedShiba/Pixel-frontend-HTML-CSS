@@ -15,28 +15,30 @@
 <body>
 
   <!--header-->
-    <div class="container-fluid pt-5 myHeader">
-      <div class="container">
-        <div class="text-header pt-5">
-          <h1><b>Lorem ipsum dolor sit amet</b></h1>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-          <button class="btn btn-primary">
-            <b>Buy Now</b>
-          </button>
+    <div class="container-fluid myHeader">
+      <div class="darken">
+        <div class="container">
+          <div class="text-header pt-5 align-middle">
+            <h1 class="pt-5 mt-5"><b>Lorem ipsum dolor sit amet</b></h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+            <button class="btn btn-primary position-relative horizontal-center">
+              <b>Buy Now</b>
+            </button>
+          </div>
         </div>
       </div>
     </div>
     <div class="gradient"></div>
-    <img src="images-icons/down-arrow.svg" id="down-arrow">
+    <img src="images-icons/down-arrow.svg" class="mx-auto down-arrow horizontal-center">
     
     <!--hexagon-->
     <img src="images-icons/hex4.svg" id="hex-header-oben">
     <img src="images-icons/hex5.svg" id="hex-header-unten">
 
-    <!--navbar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <!--navbar   auf den jeweiligen seiten active hellblau-->
+    <nav class="navbar navbar-expand-md navbar-white bg-white sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src=logo.jpg id="logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="images-icons/pm-logo.png" class="ms-3 me-0 pm-logo"></a>
         <div class="container">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
             <span class="navbar-toggler-icon"></span>
@@ -44,22 +46,22 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Produkt</a>
+                <a class="nav-Link" href="#">Produkt</a>
              </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Preise</a>
+                <a class="nav-Link" href="#">Preise</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ressourcen</a>
+                <a class="nav-Link" href="#">Ressourcen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Über Uns</a>
+                <a class="nav-Link" href="#">Über Uns</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button class="btn btn-primary me-md-2" type="button">Sign Up</button>
+          <button class="btn btn-signUp me-md-2" type="button">Sign Up</button>
           <button type="button" class="btn btn-link">Login</button>
         </div>
       </div>
@@ -67,165 +69,169 @@
 
     <!--flavour block-->
     <div class="container-fluid py-5 flavour-block">
-        <h2 class="text-center"><b>Mehr als Tracking</b></h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+      <div class="container">
+        <h2 class="text-center mt-5"><b>Mehr als Tracking</b></h2>
+        <p class="text-center mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. labore et dolore magna aliquyam erat, sed diam voluptua elitr, sed diam nonumy eirmod tempor invidunt.</p>
+      </div>
     </div>
 
     <!--hexagon-->
     <img src="images-icons/hex3.svg" id="hex-cards-oben">
     
     <!--cards-->
-    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 my-1">
-        <div class="col">
-          <div class="card h-100 p-4 card-shadow border-0">
-            <h3 class="card-title text-center"><b>MEHR TRANZPARENZ</b></h3>
-            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-3 my-5 d-flex justify-content-between">
+          <div class="card-width">
+            <div class="card p-4 card-shadow border-0 card-height border-radius">
+              <h3 class="card-title text-center mt-3"><b>MEHR</br>TRANZPARENZ</b></h3>
+              <p class="card-text mt-3 mx-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr, sed diam nonumy eirmod tempor invidunt ut labore diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr</p>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 p-4 card-shadow border-0">
-            <h3 class="card-title text-center"><b>BESSERE KAMPAGNEN</b></h3>
-            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. g elitr, sed diam nonumy eirmod tempor invidunt ut t, consetetur</p>
+          <div class="col card-width">
+            <div class="card p-4 card-shadow border-0 card-height border-radius">
+              <h3 class="card-title text-center mt-3"><b>BESSERE</br>KAMPAGNEN</b></h3>
+              <p class="card-text mt-3 mx-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. g elitr, sed diam nonumy eirmod tempor invidunt ut t, consetetur diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr</p>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 p-4 card-shadow border-0">
-            <h3 class="card-title text-center"><b>MEHR UMSATZ</b></h3>
-            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
+          <div class="col card-width">
+            <div class="card p-4 card-shadow border-0 card-height border-radius">
+              <h3 class="card-title text-center mt-3"><b>MEHR</br>UMSATZ</b></h3>
+              <p class="card-text mt-3 mx-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr, sed diam nonumy eirmod tempor invidunt ut labore diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr</p>
+            </div>
           </div>
-        </div>
+      </div>
     </div>
 
     <!--hexagon-->    
     <img src="images-icons/hex2.svg" id="hex-cards-unten">
 
     <!--texte-->
-    <div class="container d-grid gap-1">
+    <div class="container d-grid gap-1 my-5">
       <div class="my-5">
-        <img src="images-icons/home1.jpg" class="float-start me-4 desk">
+        <img src="images-icons/home1.jpg" class="float-start me-5 desk">
         <div>
           <h3>Sed diam nonumy eirmod tempor invidunt ut labore</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
         </div>
       </div>
    
       <div class="my-5">
-        <img src="images-icons/home1.jpg" class="float-end ms-4 desk">
+        <img src="images-icons/home1.jpg" class="float-end ms-5 desk">
         <div>
-          <h3>Dolore magna aliquyam erat, sed diam voluptua</h3>
-          <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <h3 class="text-end">Dolore magna aliquyam erat, sed diam voluptua</h3>
+          <p class="text-end">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
         </div>
       </div>
       
       <div class="my-5">
-        <img src="images-icons/home1.jpg" class="float-start me-4 desk">
+        <img src="images-icons/home1.jpg" class="float-start me-5 desk">
         <div>
           <h3>Sed diam nonumy eirmod tempor invidunt ut labore</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. scing elitr consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
         </div>
       </div>
     </div>
     
     <!--footer-->
-    <div class="footer">
+    
 
-      <!--start tracking-->  
-      <div class="container-fluid py-5 start-tracking">
-        <h2 class="text-center"><b>START TRACKING TODAY!</b><img src="images-icons/hex1.svg" id="hex-start-tracking"></h2>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-          <button class="btn btn-secondary"><b>Buy Now</b></button>
-        </div>
-      </div>
-    
-      <div class="container py-5 d-flex flex-row justify-content-between">
-        <!--partners-->
-        <div class="py-3">
-          <h3><b>Our Partners</b></h3>
-          <div>
-            <img src="images-icons/part1.png" class="img-partner mb-5 mt-3 me-3">
-            <img src="images-icons/part2.png" class="img-partner mb-5 mt-3 me-4">
-            <img src="images-icons/part3.png" class="img-partner mb-5 mt-3">
-          </div>
-            <a class="light-blue"><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
-        </div>
-    
-        <!--CHANGE TO VERTICAL
-        <hr class="">-->
-    
-        <!--certifications-->
-        <div class="py-3">
-          <h3><b>Our Certifications</b></h3>
-          <div>
-            <img src="images-icons/cert1.png" class="img-cert mb-3 mt-3 me-2">
-            <img src="images-icons/cert2.png" class="img-cert mb-3 mt-3 me-2">
-            <img src="images-icons/cert3.png" class="img-cert mb-3 mt-3 me-2">
-            <img src="images-icons/cert4.png" class="img-cert mb-3 mt-3">
-          </div>
-          <a class="light-blue"><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
-        </div>
-      </div>
-    
-      <!--impressum-->
-      <div class="container-fluid pt-5 pb-3 flavour-block">
-        <div class="container pt-3 pb-2 d-flex flex-row justify-content-between">
-          <!--left side-->
-          <div class="">
-            <!--rating-->
-            <ul class="d-flex flex-row list-unstyled">
-              <li class="me-3"><img src="images-icons/star.svg"></li>
-              <li class="me-3"><img src="images-icons/star.svg"></li>
-              <li class="me-3"><img src="images-icons/star.svg"></li>
-              <li class="me-3"><img src="images-icons/star.svg"></li>
-              <li class="me-3"><img src="images-icons/star.svg"></li>
-              <li>Google Rating <b>4.5</b>/5</li>
-            </ul>
-
-            <!--form-->
-            <form action="" class="">
-              <label for="subscribe" class="mb-2"><b>Subscribe to PixelMechanics vie Email</b></label>
-              <div class="">
-                <input type="text" class="form-control my-form" id="staticEmail2" placeholder="Subscribe to PixelMechanics vie Email">
-                <button type="submit" class="btn btn-tertiary btn-position"><b>Subscribe</b></button>
-              </div>
-            </form>
-    
-            <!--social media-->
-            <div class="d-flex flex-row">
-              <div class="">
-                <span>Connect with us</span></br>
-                <div class="flex_container_row">
-                  <img src="images-icons/f-icon.svg" alt="Facebook" class="social-media-logo me-1 mt-2 mb-5">
-                  <img src="images-icons/in-icon.svg" alt="LinkedIn" class="social-media-logo me-1 mt-2 mb-5">
-                  <img src="images-icons/insta-icon.svg" alt="Instagram" class="social-media-logo me-1 mt-2 mb-5">
-                  <img src="images-icons/bird-site-icon.svg" alt="Twitter" class="social-media-logo mt-2 mb-5">
-                </div>
-              </div>
-    
-              <div class="px-5 mx-5">
-                <span><b>Call:</b> +49 911 1313 3780</span></br>
-                <span><b>Email:</b> hello@pixelmechanics.de</span>
-              </div>
-            </div>
-    
-            <div class="d-flex flex-row">
-              <div>Copyright</div>
-              <hr width="1" size="15" class="mx-4">
-              <div>imprint</div>
-              <hr width="1" size="15" class="mx-4">
-              <div>Career</div>
-            </div>
-    
-            <hr class="horizontal_line">
-    
-            <span>&#169; 2021 pixelmechanics. All rights reserved.</span>
-          </div>
-    
-          <!--right side-->
-          <img src="images-icons/worldmap.svg" class="map">
-    
-        </div>
+    <!--start tracking-->  
+    <div class="container-fluid py-5 start-tracking">
+      <h2 class="text-center mt-3"><b>START TRACKING TODAY!</b><img src="images-icons/hex1.svg" id="hex-start-tracking"></h2>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button class="btn btn-secondary mb-3"><b>Buy Now</b></button>
       </div>
     </div>
+    
+    <div class="container py-5 d-flex flex-row justify-content-between">
+      <!--partners-->
+      <div class="py-3">
+        <h3><b>Our Partners</b></h3>
+        <div>
+          <img src="images-icons/part1.png" class="img-partner mb-5 mt-3 me-3">
+          <img src="images-icons/part2.png" class="img-partner mb-5 mt-3 me-4">
+          <img src="images-icons/part3.png" class="img-partner mb-5 mt-3">
+        </div>
+          <a class="light-blue"><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
+      </div>
+    
+      <!--divider-->
+      <hr width="1" size="180" class="position-absolute horizontal-center-line mx-4">
+    
+      <!--certifications-->
+      <div class="py-3">
+        <h3><b>Our Certifications</b></h3>
+        <div>
+          <img src="images-icons/cert1.png" class="img-cert mb-3 mt-3 me-2">
+          <img src="images-icons/cert2.png" class="img-cert mb-3 mt-3 me-2">
+          <img src="images-icons/cert3.png" class="img-cert mb-3 mt-3 me-2">
+          <img src="images-icons/cert4.png" class="img-cert mb-3 mt-3">
+        </div>
+        <a class="light-blue"><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
+      </div>
+    </div>
+    
+    <!--impressum-->
+    <div class="container-fluid pt-5 pb-3 flavour-block">
+      <div class="container pt-3 pb-2 d-flex flex-row justify-content-between">
+        <!--left side-->
+        <div class="">
+          <!--rating-->
+          <ul class="d-flex flex-row list-unstyled">
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-3"><img src="images-icons/star.svg" class="star"></li>
+            <li>Google Rating <b>4.5</b>/5</li>
+          </ul>
+
+          <!--form-->
+          <form action="" class="">
+            <label for="subscribe" class="mb-2"><b>Subscribe to PixelMechanics vie Email</b></label>
+            <div class="">
+              <input type="text" class="form-control my-form" id="staticEmail2" placeholder="Subscribe to PixelMechanics vie Email">
+              <button type="submit" class="btn btn-tertiary btn-position"><b>Subscribe</b></button>
+            </div>
+          </form>
+    
+          <!--social media-->
+          <div class="d-flex flex-row">
+            <div class="">
+              <span>Connect with us</span></br>
+              <div class="flex_container_row">
+                <img src="images-icons/f-icon.svg" alt="Facebook" class="social-media-logo me-1 mt-2 mb-5">
+                <img src="images-icons/in-icon.svg" alt="LinkedIn" class="social-media-logo me-1 mt-2 mb-5">
+                <img src="images-icons/insta-icon.svg" alt="Instagram" class="social-media-logo me-1 mt-2 mb-5">
+                <img src="images-icons/bird-site-icon.svg" alt="Twitter" class="social-media-logo mt-2 mb-5">
+              </div>
+            </div>
+    
+            <div class="px-5 mx-5">
+              <span><b>Call:</b> +49 911 1313 3780</span></br>
+              <span><b>Email:</b> hello@pixelmechanics.de</span>
+            </div>
+          </div>
+    
+          <div class="d-flex flex-row">
+            <div>Copyright</div>
+            <hr width="1" size="15" class="mx-4">
+            <div>imprint</div>
+            <hr width="1" size="15" class="mx-4">
+            <div>Career</div>
+          </div>
+    
+          <hr class="horizontal_line">
+    
+          <span>&#169; 2021 pixelmechanics. All rights reserved.</span>
+        </div>
+    
+        <!--right side-->
+        <img src="images-icons/worldmap.svg" class="map">
+    
+      </div>
+    </div>
+    
     
 </body>
 </html>
