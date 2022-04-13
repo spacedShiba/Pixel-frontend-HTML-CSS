@@ -1,18 +1,69 @@
 /*header*/
 .myHeader {
-    background-color:lightsteelblue;
+    background-image: url(images-icons/building.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     height: 100vh;
 }
 
-/*navbar*/
-#logo {
-    height: 50px;
-    width: 80px;
-    object-fit: cover;    
+.text-header {
+    color: white;
+    width: 40%;
 }
 
-a .nav-link { 
-    color: #132D3F; /*geht nicht*/
+h1 {
+    font-size: 40pt;
+}
+
+.myHeader p {
+    font-size: 1.25rem;
+}
+
+.darken {
+    background-color: rgba(19,45,63,0.4);
+    height: 100vh;
+}
+
+.gradient {
+    background: linear-gradient(to bottom, rgba(255, 99, 71, 0), #132D3F);
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0px;
+}
+
+.down-arrow {
+    display: block;
+    position:absolute;
+    bottom: 30px;
+}
+
+.horizontal-center {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.horizontal-center-line {
+    left: 48.5%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+  
+#hex-header-oben {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    position: absolute;
+    left: 45%;
+    top: 0px;
+}
+
+#hex-header-unten {
+    position: absolute;
+    bottom: -130px;
+    right: 0px;
 }
 a .nav-link:hover {
     color: gray;
@@ -22,9 +73,42 @@ a .nav-link:hover {
     background-color: #E67112;
     color: white;
     border-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .btn-primary:hover {
     background-color: #be5311;
+}
+
+/*navbar*/
+.pm-logo {
+    height: 50px;
+    width: 150px;
+    object-fit: contain;    
+}
+
+.nav-Link { 
+    color: #132D3F;
+    vertical-align: sub;
+    text-decoration: none;
+    margin: 20px;
+    margin-left: 0px;
+}
+.nav-Link:hover {
+    color: #0EA7BF;
+}
+
+.btn-signUp {
+    background-color: #E67112;
+    color: white;
+    border-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px;
+}
+.btn-signUp:hover {
+    background-color: #be5311;
+    color: white;
 }
 
 .btn-link {
@@ -42,17 +126,44 @@ a .nav-link:hover {
 }
 
 /*card*/
-.card-with {
-    width: 400px; /*nicht benutzt*/
+.card-width {
+    width: 400px;
+}
+
+.card-height {
+    height: 400px;
+}
+
+.border-radius {
+    border-radius: 30px;
 }
 
 .card-shadow {
-  box-shadow: 0px 0px 10px 5px #132d3f13;
+    box-shadow: 0px 0px 10px 5px #132d3f13;
 }
 
-.desk {
+#hex-cards-oben {
     height: 200px;
     width: 200px;
+    object-fit: contain;
+    position: absolute;
+    left: -40px;
+    bottom: -485px;
+}
+
+#hex-cards-unten {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    position: absolute;
+    right: 40px;
+    bottom: -900px;
+}
+
+/*texte*/
+.desk {
+    height: 250px;
+    width: 250px;
     object-fit: cover; 
 }
 
@@ -74,12 +185,97 @@ a .nav-link:hover {
     color: white;
 }
 
+#hex-start-tracking {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    position: relative;
+    bottom: 8px;
+}
+
 .btn-secondary {
     background-color: white;
     color: #E67112;
     border-style: none;
+    border-radius: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .btn-secondary:hover {
     background-color: #fff6ee;
     color: #E67112;
+}
+
+/*partners*/
+.img-partner {
+    height: 40px;
+    width: 160px;
+    object-fit: contain;
+}
+
+/*certifications*/
+.img-cert {
+    height: 80px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.light-blue {
+    color: #0EA7BF;
+    text-decoration: none;
+}
+.light-blue:hover {
+    color: #0d8ea2;
+    text-decoration: none;
+}
+
+.img_arrow {
+    height: 15px;
+    width: 20px;
+    object-fit: contain;
+}
+
+/*impressum*/
+.star {
+    height: px;
+    width: 20px;
+    object-fit: contain;
+}
+
+/*form*/
+.my-form {
+    background-color: #132D3F;
+    width: 320px;
+    height: 36px;
+}
+
+.btn-tertiary {
+    background-color: #0EA7BF;
+    color: white;
+    border-style: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.btn-tertiary:hover {
+    background-color: #0d8ea2;
+    color: white;
+}
+.btn-position {
+    position: relative;
+    bottom: 36px;
+    left: 300px;
+}
+
+/*social media*/
+.social-media-logo {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+/*map*/
+.map {
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
 }
