@@ -11,8 +11,11 @@
     object-fit: cover;    
 }
 
-.nav-link { 
+a .nav-link { 
     color: #132D3F; /*geht nicht*/
+}
+a .nav-link:hover {
+    color: gray;
 }
 
 .btn-primary {
@@ -51,6 +54,17 @@
     height: 200px;
     width: 200px;
     object-fit: cover; 
+}
+
+/**/
+.orangeBG {
+    background-color: #E67112;
+    color:white;
+}
+
+.darkBG {
+    background-color: #132D3F;
+    color: white;
 }
 
 /*footer*/

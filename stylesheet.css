@@ -21,19 +21,16 @@ h1 {
   font-family: Poppins-Bold, sans-serif;
   font-size: 4rem;
   margin-bottom: 0px;
-  color: white;
 }
 
 h2 {
   font-family: Poppins-Bold, sans-serif;
   font-size: 2.8rem;
-  text-align: center;
 }
 
 h3 {
   font-family: Poppins-Bold, sans-serif;
   font-size: 2.5rem;
-  text-align: center;
 }
 
 p {
@@ -115,7 +112,7 @@ li a:hover {
     display: inline-block;
     text-align: center;
     background-color: #E67112;
-    margin-right: 60px;
+    margin-right: 3vw;
   }
 
   .button_link {
@@ -147,14 +144,15 @@ li a:hover {
     width: 100%;
     margin-left: 0px;
     height: 90px;
+    box-sizing: border-box;
     z-index: 1;
   }
 
   .logo{
-    margin: 0;
+    margin: 0px;
     display:flex;
     height: 50px;
-    width: 280px;
+    width: 50px;
     object-fit: cover;
   }
 
@@ -169,22 +167,16 @@ li a:hover {
     box-shadow: 0px 4px 6px #132d3f13;
   }
 
-  .nav_list li {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-  }
+.nav_list li {
+  display: none;
+}
 
-  .nav_list li:last-child {
-    margin-left: auto;
-    margin-right: 3%;
-  }
-
-  li a {
-    text-decoration: none;
-    color: #132D3F;
-  }
+#sm-visible {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 1.5vw;
+}
 
 .flavour_block {
   background-color: #132D3F;
@@ -197,8 +189,9 @@ li a:hover {
   text-align: center;
 }
 
+
 .content {
-  margin:1%
+  padding: 2%;
 }
 
 #cards {
@@ -245,7 +238,6 @@ img {
   width: 380px;
   height: 380px;
   object-fit: cover;
-  margin: 50px;
 }
 
 #hex3{
@@ -285,25 +277,38 @@ img {
 }
 
 .right {
-  display: flex;
-  /*max-width: 1240px;
-  margin: auto;*/
-  text-align: left;
+  display: block;
+  width:100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  overflow:auto;
+  background-color: aqua;
 
   /*display:flex;
   justify-content: space-between;*/
 }
 
-.right div h3 {
-  text-align: left;
+.right img {
+  display: block;
+  margin:auto;
+  margin-bottom: 5%;
+}
+
+.right div {
+  margin: auto;
 }
 
 .left {
   display: block;
-  float: left;
-  /*max-width: 1240px;
-  margin: auto;*/
-  text-align: right;
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  overflow:auto;
+  background-color: coral;
 
   /*display:flex;
   justify-content: space-between;*/
@@ -311,11 +316,129 @@ img {
 
 .left img {
   display: block;
-  float: right;
+  margin:auto;
+  margin-bottom: 5%;
 }
 
-.left div h3 {
-  text-align: right;
+.left div {
+  margin:auto;
+}
+
+@media (min-width:1200px) {
+  .logo{
+    width:280px;
+  }
+}
+
+@media all and (min-width:992px) {
+
+  .nav_list li {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 1.5vw;
+    background-color: aqua;
+  }
+
+  .nav_list li:last-child {
+    margin-left: auto;
+    margin-right: 3%;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #132D3F;
+  }
+
+  #sm-visible {
+    display: flex;
+    padding: 0px;
+    margin-left: 1.5vw;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: left;
+    overflow:auto;
+    background-color: aqua;
+  
+    /*display:flex;
+    justify-content: space-between;*/
+  }
+  
+  .right img {
+    display: flex;
+    align-self: flex-start;
+    margin:0;
+    margin-right: 1%;
+  }
+  
+  .right div {
+    margin: auto;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: right;
+    overflow:auto;
+    background-color: coral;
+  
+    /*display:flex;
+    justify-content: space-between;*/
+  }
+  
+  .left img {
+    display: flex;
+    margin:0;
+    margin-right: auto;
+    margin-left: 1%;
+    order: 2;
+  }
+  
+  .left div {
+    margin:auto;
+  }
+}
+
+.center{
+  display: flexbox;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  /*background-color: coral;*/
+}
+
+.block {
+  text-align: justify;
+}
+
+.orangeBG {
+  background-color: #E67112;
+  color: white;
+  padding: 2%;
+  margin-left: -2.1%;
+  margin-right: -2.1%;
+}
+
+.darkBG {
+  background-color: #132D3F;
+  color: white;
+  padding: 2%;
+  margin-left: -2.1%;
+  margin-right: -2.1%;
+  text-align: center;
 }
 
 .left_right {
@@ -457,7 +580,6 @@ hr {
   display: block;
   padding: 0px;
   margin: 5px;
-  xxbackground-color:darkblue;
 }
 
 .star img {
