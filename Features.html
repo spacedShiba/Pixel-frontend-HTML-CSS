@@ -13,48 +13,12 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header darken">
         <div class="center my-auto">
             <h1>Features</h1>
             <p>What you get with Product</p>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
     <nav>
         <ul class="nav_list">
           <li id="sm-visible">
@@ -176,18 +140,15 @@
     </div>
 
     <div class="flavour_block">
-        <h2>Have any more questions?</h2>
-        <p>Visit our <a href="">FAQ</a></p>
+        <h3>Have any more questions?</h3>
+        <p>Visit our <a class="active" href="#">FAQ</a></p>
     </div>
 
     <footer>
-        <div id="horizontal" class="start_tracking">
-          <div id="vertical">
+        <div class="flavour_block start-tracking">
             <h2>START TRACKING TODAY!</h2>
-            <img src="images-icons/hex1.svg" id="hex5">
-            <div class="button">
-              <a>Buy Now</a></div>
-          </div>
+            <!--<img src="images-icons/hex1.svg" id="hex5">-->
+            <div class="btn-wo"><a>Buy Now</a></div>
         </div>
     
         <div class="container_certifications">
@@ -201,7 +162,7 @@
             <a><b>View All</b> <img src="images-icons/arrow.svg" class="img_arrow"></a>
           </div>
     
-          <hr class="divider">
+          <hr width="1" size="180" class="horizontal-center-line mx-4" id="vertical-line">
     
           <div class="partners">
             <h3>Our Certifications</h3>
@@ -216,7 +177,9 @@
         </div>
     
         <div class="impressum">
-          <div class="flex_container_row">
+
+            <img src="images-icons/worldmap.svg" class="map">
+
             <div class="impressum_block">
               <ul class="star_list">
                 <li class="star"><img src="images-icons/star.svg"></li>
@@ -228,15 +191,15 @@
               </ul>
     
               <form action="">
-                <label for="subscribe"><b>Subscribe to PixelMechanics vie Email</b></label>
-                <div class="flex_container_row">
-                  <input type="text" id="subscribe" name="subscribe" value="Subscribe to PixelMechanics vie Email"></br>
+                <label for="subscribe"><b>Subscribe to PixelMechanics via Email</b></label>
+                <div class="flex_container_row type-form">
+                  <input type="text" id="subscribe" name="subscribe" value="Subscribe to PixelMechanics via Email"></br>
                   <div class="subscribe_button"><b>Subscribe</b></div>
                 </div>
               </form>
     
-              <div class="flex_container_row">
-                <div class="flex_container_column">
+              <div class="row">
+                <div class="col">
                   <span>Connect with us</span></br>
                   <div class="flex_container_row">
                     <img src="images-icons/f-icon.svg" alt="Facebook" class="social_media_logo">
@@ -246,17 +209,17 @@
                   </div>
                 </div>
     
-                <div class="call_mail">
+                <div class="col">
                   <span><b>Call:</b> +49 911 1313 3780</span></br>
                   <span><b>Email:</b> hello@pixelmechanics.de</span>
                 </div>
               </div>
     
-              <div class="flex_container_row">
+              <div class="d-flex flex-row">
                 <div>Copyright</div>
-                <hr width="1" size="15" class="copyright_divider">
+                <hr width="1" size="15" class="mx-4">
                 <div>imprint</div>
-                <hr width="1" size="15" class="copyright_divider">
+                <hr width="1" size="15" class="mx-4">
                 <div>Career</div>
               </div>
     
@@ -265,9 +228,6 @@
               <span>&#169; 2021 pixelmechanics. All rights reserved.</span>
             </div>
     
-            <img src="images-icons/worldmap.svg" class="map">
-    
-          </div>
         </div>
     </footer>
     
