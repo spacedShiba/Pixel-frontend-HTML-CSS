@@ -3,13 +3,19 @@
     background-image: url(images-icons/building.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     height: 100vh;
 }
 
 .text-header {
     color: white;
     width: 40%;
+}
+@media all and (max-width: 992px) {
+    .text-header {
+        color: white;
+        width: 100%;
+    }
 }
 
 h1 {
@@ -59,12 +65,36 @@ h1 {
     left: 45%;
     top: 0px;
 }
+@media all and (max-width: 992px) {
+    #hex-header-oben {
+        height: 150px;
+        width: 150px;
+        object-fit: contain;
+        position: absolute;
+        left: 45%;
+        top: 0px;
+    }
+}
 
 #hex-header-unten {
+    height: 450px;
+    width: 450px;
+    object-fit: contain;
     position: absolute;
-    bottom: -130px;
+    bottom: -160px;
     right: 0px;
 }
+@media all and (max-width: 992px) {
+    #hex-header-unten {
+        height: 150px;
+        width: 150px;
+        object-fit: contain;
+        position: absolute;
+        right: 0px;
+        bottom: -50px;
+    }
+}
+
 a .nav-link:hover {
     color: gray;
 }
@@ -150,14 +180,34 @@ a .nav-link:hover {
     left: -40px;
     bottom: -485px;
 }
+@media all and (max-width: 576px) {
+    #hex-cards-oben {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+        position: absolute;
+        left: -20px;
+        bottom: -500px;
+    }
+}
 
 #hex-cards-unten {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     object-fit: contain;
     position: absolute;
     right: 40px;
     bottom: -900px;
+}
+@media all and (max-width: 576px) {
+    #hex-cards-unten {
+        height: 150px;
+        width: 150px;
+        object-fit: contain;
+        position: absolute;
+        right: 40px;
+        bottom: -980px;
+    }
 }
 
 /*texte*/
@@ -264,6 +314,15 @@ a .nav-link:hover {
     position: relative;
     bottom: 36px;
     left: 300px;
+}
+@media all and (max-width: 576px) {
+    .btn-tertiary {
+        background-color: #0EA7BF;
+        color: white;
+        border-style: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 /*social media*/
