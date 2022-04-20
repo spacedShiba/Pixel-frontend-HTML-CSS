@@ -1,6 +1,14 @@
 /*header*/
-.myHeader {
+.homeHeader {
     background-image: url(images-icons/building.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.faqHeader {
+    background-image: url(images-icons/FAQ/headerBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,7 +17,7 @@
 
 .text-header {
     color: white;
-    width: 40%;
+    width: 42%;
 }
 @media all and (max-width: 992px) {
     .text-header {
@@ -22,8 +30,12 @@ h1 {
     font-size: 40pt;
 }
 
-.myHeader p {
-    font-size: 1.25rem;
+.btn-link-secondary {
+    color: #E67112;
+    text-decoration: none;
+}
+.btn-link-secondary:hover {
+    color: #be5311;
 }
 
 .darken {
@@ -155,6 +167,12 @@ a .nav-link:hover {
     color: white;
 }
 
+.faq-icon {
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+}
+
 /*card*/
 .card-width {
     width: 400px;
@@ -228,6 +246,88 @@ a .nav-link:hover {
     color: white;
 }
 
+/*FAQ*/
+/*häufigste fragen*/
+.faq-hex {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    position: absolute;
+    left: -30px;
+    top: 1285px;
+}
+
+.btn-link-tertiary {
+    color: #0EA7BF;
+    text-decoration: none;
+}
+.btn-link-tertiary:hover {
+    color: #0d8ea2;
+}
+
+.btn-accordion {
+    background-color: #cfd5db;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+.btn-accordion:after {
+    content: '\2212';
+    float: right;
+    color: #0EA7BF;
+}
+.btn-accordion.collapsed:after {
+    content: '\002B';
+}
+
+/*
+.btn-accordion.collapsed {
+    border-radius: 0px;
+    color: deeppink;
+}*/
+
+.card-body {
+    border-style: none;
+    background-color: #cfd5db;
+    border-radius: 0px 0px 15px 15px;
+
+    padding-top: 30px;
+    position: relative;
+    bottom: 15px;
+    z-index: -1;
+}
+
+.adress-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain; 
+}
+
+.adresse {
+    margin-left: 37px;
+}
+
+.faq-form {
+    background-color: transparent;
+    border-color: white;
+}
+
+.my-form-control {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 100%;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
 /*footer*/
 /*start tracking*/
 .start-tracking {
@@ -294,7 +394,7 @@ a .nav-link:hover {
 
 /*form*/
 .my-form {
-    background-color: #132D3F;
+    background-color: transparent;
     width: 320px;
     height: 36px;
 }

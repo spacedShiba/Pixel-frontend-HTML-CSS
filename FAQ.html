@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <!--Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--mein CSS-->
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+
+  <!--header-->
+    <div class="container-fluid p-0 faqHeader">
+      <div class="darken">
+        <div class="container">
+          <div class="text-header pt-5 align-middle">
+            <h1 class="pt-5 mt-5"><b>Lorem ipsu dolor sit</b></h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+            <button class="btn btn-link-secondary p-0">
+              <b>Learn more<img src="images-icons/FAQ/arrow.svg" class="img_arrow ms-2"></b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gradient"></div>
+    <img src="images-icons/down-arrow.svg" class="mx-auto down-arrow horizontal-center">
+
+    <!--navbar   auf den jeweiligen seiten active hellblau-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images-icons/pm-logo.png" class="ms-3 me-0 pm-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-Link" href="#">Produkt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-Link" href="#">Preise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-Link" href="#">Ressourcen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-Link" href="#">Über Uns</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <button class="btn btn-signUp me-2" type="button">SignUp</button>
+            <button type="button" class="btn btn-link">Login</button>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!--flavour block-->
+    <div class="container-fluid py-5 flavour-block">
+      <div class="container">
+        <img src="images-icons/FAQ/icon.svg" class="float-start me-5 faq-icon">
+        <h2 class="mt-5"><b>FAQ</b></h2>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et. invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+      </div>
+    </div>
+
+    <!--hexagon-->
+    <img src="images-icons/FAQ/Hexagon.svg" class="faq-hex">
+
+    <!--fragen-->
+    <div class="container py-5">
+        <h3 class="d-inline">Häufige Fragen</h3><button class="btn btn-link-tertiary">alle anzeigen</button>
+        
+        <div class="accordion" id="accordionExample">
+          <div class="my-3">
+            <button class="btn btn-accordion w-100 text-start " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
+            </button>
+            <div class="accordion-collapse collapse" id="collapseExample1" data-bs-parent="#accordionExample">
+              <div class="card card-body">
+                  eaaliquyam erat, sed diam voluptua.
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <button class="btn btn-accordion w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+              Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna?
+            </button>
+            <div class="accordion-collapse collapse" id="collapseExample2" data-bs-parent="#accordionExample">
+              <div class="card card-body">
+                  eaaliquyam erat, sed diam voluptua. At   vero eos et accusam et justo duo dolores  rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At   vero eos et accusam et justo duo dolores  rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <button class="btn btn-accordion w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+              At vero eos et accusam et justo duo dolores et ea rebum?
+            </button>
+            <div class="accordion-collapse collapse" id="collapseExample3" data-bs-parent="#accordionExample">
+              <div class="card card-body">
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <button class="btn btn-accordion w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
+            </button>
+            <div class="accordion-collapse collapse" id="collapseExample4" data-bs-parent="#accordionExample">
+              <div class="card card-body">
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <button class="btn btn-accordion w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+              Stet clita kasd gubergren, no sea takimata?
+            </button>
+            <div class="accordion-collapse collapse" id="collapseExample5" data-bs-parent="#accordionExample">
+              <div class="card card-body">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <button class="btn btn-accordion w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiatar nulla facilisis?
+            </button>
+            <div class="accordion-collapse collapse" id="collapseExample6" data-bs-parent="#accordionExample">
+              <div class="card card-body">
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <button class="btn btn-accordion w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+              At vero eos et accusam?
+            </button>
+            <div class="accordion-collapse collapse" id="collapseExample7" data-bs-parent="#accordionExample">
+              <div class="card card-body">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+        
+    <!--eigene frage-->
+    <div class="container-fluid orangeBG py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h3><b>Couldn´t find what you were looking for?</b></h3>
+                    <p class="py-3">Get in Contact. We are looking forward to your message and will always answer. Or call us.</p>
+                    <img src="images-icons/FAQ/adresse.svg" class="float-start me-3 adress-icon">
+                    <p class="my-0">PixelMechanic Pvt. Ltd.</p>
+                    <p class="my-0 adresse">Bucherstr. 79a</p>
+                    <p class="my-0 adresse mb-3">90419 Nürnberg</p>
+                    <img src="images-icons/FAQ/oeffnungszeiten.svg" class="float-start me-3 adress-icon">
+                    <p>Mo – Fr: 09:00 – 18:00 Uhr</p>
+                    <img src="images-icons/FAQ/telefon.svg" class="float-start me-3 adress-icon">
+                    <p>+49 911 1313 3780</p>
+                    <img src="images-icons/FAQ/email.svg" class="float-start me-3 adress-icon">
+                    <p>kontakt@pixelmechanics.com</p>
+                </div>
+                <div class="col-7">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="my-form-control faq-form" id="name" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="my-form-control faq-form" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="my-form-control faq-form" id="mobil" placeholder="Mobile">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="my-form-control faq-form" id="exampleFormControlTextarea1" placeholder="Your message" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">I agree to the privacy policy and to being contacted. *</label>
+                        </div>
+                        <button type="submit" class="btn btn-tertiary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="container py-5 d-flex flex-row justify-content-between">
+      <!--partners-->
+      <div class="py-3">
+        <h3><b>Our Partners</b></h3>
+        <div>
+          <img src="images-icons/part1.png" class="img-partner mb-5 mt-3 me-3">
+          <img src="images-icons/part2.png" class="img-partner mb-5 mt-3 me-4">
+          <img src="images-icons/part3.png" class="img-partner mb-5 mt-3">
+        </div>
+          <a class="light-blue"><b>View All</b><img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
+      </div>
+    
+      <!--divider-->
+      <hr width="1" size="180" class="position-absolute horizontal-center-line mx-4">
+    
+      <!--certifications-->
+      <div class="py-3">
+        <h3><b>Our Certifications</b></h3>
+        <div>
+          <img src="images-icons/cert1.png" class="img-cert mb-3 mt-3 me-2">
+          <img src="images-icons/cert2.png" class="img-cert mb-3 mt-3 me-2">
+          <img src="images-icons/cert3.png" class="img-cert mb-3 mt-3 me-2">
+          <img src="images-icons/cert4.png" class="img-cert mb-3 mt-3">
+        </div>
+        <a class="light-blue"><b>View All</b><img src="images-icons/arrow.svg" class="img_arrow ms-2"></a>
+      </div>
+    </div>
+    
+    <!--impressum-->
+    <div class="container-fluid pt-5 pb-3 flavour-block">
+      <div class="container pt-3 pb-2 d-lg-flex flex-lg-row justify-content-between">
+        <!--left side-->
+        <div class="">
+          <!--rating-->
+          <ul class="d-flex flex-row list-unstyled">
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-2"><img src="images-icons/star.svg" class="star"></li>
+            <li class="me-3"><img src="images-icons/star.svg" class="star"></li>
+            <li>Google Rating <b>4.5</b>/5</li>
+          </ul>
+
+          <!--form-->
+          <form action="" class="">
+            <label for="subscribe" class="mb-2"><b>Subscribe to PixelMechanics vie Email</b></label>
+            <div class="">
+              <input type="text" class="form-control my-form" id="staticEmail2" placeholder="Subscribe to PixelMechanics vie Email">
+              <button type="submit" class="btn btn-tertiary btn-position"><b>Subscribe</b></button>
+            </div>
+          </form>
+    
+          <!--social media-->
+          <div class="d-flex flex-row">
+            <div class="">
+              <span>Connect with us</span></br>
+              <div class="d-flex flex-row">
+                <img src="images-icons/f-icon.svg" alt="Facebook" class="social-media-logo me-1 mt-2 mb-5">
+                <img src="images-icons/in-icon.svg" alt="LinkedIn" class="social-media-logo me-1 mt-2 mb-5">
+                <img src="images-icons/insta-icon.svg" alt="Instagram" class="social-media-logo me-1 mt-2 mb-5">
+                <img src="images-icons/bird-site-icon.svg" alt="Twitter" class="social-media-logo mt-2 mb-5">
+              </div>
+            </div>
+    
+            <div class="px-5 mx-5">
+              <span><b>Call:</b> +49 911 1313 3780</span></br>
+              <span><b>Email:</b> hello@pixelmechanics.de</span>
+            </div>
+          </div>
+    
+          <div class="d-flex flex-row">
+            <div>Copyright</div>
+            <hr width="1" size="15" class="mx-4">
+            <div>imprint</div>
+            <hr width="1" size="15" class="mx-4">
+            <div>Career</div>
+          </div>
+    
+          <hr class="horizontal_line">
+    
+          <span>&#169; 2021 pixelmechanics. All rights reserved.</span>
+        </div>
+    
+        <!--right side-->
+        <img src="images-icons/worldmap.svg" class="map mt-5 mt-lg-0">
+    
+      </div>
+    </div>
+    
+    
+</body>
+</html>
