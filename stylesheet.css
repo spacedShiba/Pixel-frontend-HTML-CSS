@@ -33,6 +33,11 @@ h3 {
   font-size: 24pt;
 }
 
+h4 {
+  font-family: Poppins, sans-serif;
+  font-size: 25.5pt;
+}
+
 p {
   font-size: 1.5rem;
   margin-top: 0px;
@@ -62,7 +67,6 @@ img {
   width: 380px;
   height: 380px;
   object-fit: cover;
-}
 
 .active {
   color: #0EA7BF;
@@ -283,6 +287,47 @@ img {
   margin: 5px;
   bottom: 30px;
   margin-right: -20px;
+}
+
+.float-left {
+  display: block;
+  --bs-gutter-x: 0;
+  /*background-color: deeppink;*/
+}
+
+.float-left .flavour-card{
+  margin-left: -2.1%;
+  margin-bottom: 2.3vw;
+}
+
+.float-right {
+  display: block;
+  --bs-gutter-x: 0;
+  /*background-color: deeppink;*/
+}
+
+.float-right .flavour-card{
+  margin-right: -2.1%;
+  margin-top: 2.3vw;
+}
+
+.flavour-card {
+  background-color: #0EA7BF;
+  width: 100%;
+  height: 50px;
+}
+
+.res-card {
+  box-sizing: border-box;
+  color: white;
+  background-color: #132D3F;
+  padding: 40px;
+  width: 100%;
+  margin-top: 2.3vw;
+}
+
+.res-card a {
+  color: #0EA7BF;
 }
 
 .right {
@@ -694,6 +739,44 @@ input {
     display: flex;
     padding: 0px;
     margin-left: 1.5vw;
+  }
+
+  .float-left {
+    display: flex;
+    justify-content: flex-start;
+    /*background-color: deeppink;*/
+  }
+  
+  .float-left .flavour-card{
+    margin-left: -2.1%;
+    margin-bottom: 0px;
+  }
+  
+  .float-right {
+    display: flex;
+    justify-content: flex-end;
+    /*background-color: deeppink;*/
+  }
+  
+  .float-right .flavour-card{
+    margin-left: 2.3vw;
+    margin-top: 0%;
+  }
+  
+  .flavour-card {
+    background-color: #0EA7BF;
+    max-width: 30%;
+    height: unset;
+  }
+  
+  .res-card {
+    box-sizing: border-box;
+    color: white;
+    background-color: #132D3F;
+    padding: 40px;
+    max-width: 480px;
+    margin: 0px;
+    margin-left: 2.3vw;
   }
 
   .right {
