@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /*header*/
 .homeHeader {
     background-image: url(images-icons/building.jpg);
@@ -9,6 +13,14 @@
 
 .faqHeader {
     background-image: url(images-icons/FAQ/headerBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.pricingHeader {
+    background-image: url(images-icons/Pricing/headerBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -115,6 +127,7 @@ a .nav-link:hover {
     background-color: #E67112;
     color: white;
     border-style: none;
+    border-radius: 0px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -137,6 +150,10 @@ a .nav-link:hover {
     margin-left: 0px;
 }
 .nav-Link:hover {
+    color: #0EA7BF;
+}
+
+.active-nav {
     color: #0EA7BF;
 }
 
@@ -168,8 +185,8 @@ a .nav-link:hover {
 }
 
 .faq-icon {
-    height: 130px;
-    width: 130px;
+    height: 180px;
+    width: 180px;
     object-fit: contain;
 }
 
@@ -184,10 +201,6 @@ a .nav-link:hover {
 
 .border-radius {
     border-radius: 30px;
-}
-
-.card-shadow {
-    box-shadow: 0px 0px 10px 5px #132d3f13;
 }
 
 #hex-cards-oben {
@@ -246,8 +259,15 @@ a .nav-link:hover {
     color: white;
 }
 
+.turqoiseBG {
+    background-color: #0EA7BF;
+    color: white;
+}
+
 /*FAQ*/
 /*häufigste fragen*/
+
+
 .faq-hex {
     height: 200px;
     width: 200px;
@@ -255,6 +275,37 @@ a .nav-link:hover {
     position: absolute;
     left: -30px;
     top: 1285px;
+}
+
+@media all and (max-width: 1650px) {
+    .faq-hex {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+        position: absolute;
+        left: -30px;
+        top: 1260px;
+    }
+}
+@media all and (max-width: 700px) {
+    .faq-hex {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        position: absolute;
+        left: -15px;
+        top: 1460px;
+    }
+}
+@media all and (max-width: 560px) {
+    .faq-hex {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        position: absolute;
+        left: -15px;
+        top: 1560px;
+    }
 }
 
 .btn-link-tertiary {
@@ -326,6 +377,47 @@ a .nav-link:hover {
 ::placeholder {
     color: white;
     opacity: 1; /* Firefox */
+}
+
+/*pricing*/
+.price-card {
+    padding: 20px;
+    width: 280px;
+    height: 330px;
+    margin: 15px;
+}
+
+.price {
+    font-size: 80px;
+    text-align: center;
+    color:#0EA7BF;
+}
+
+.month {
+    font-size: 35px;
+    text-align: center;
+    color:#0EA7BF;
+}
+
+.badge-dark {
+    height: 40px;
+    width: 160px;
+    background-color: #132D3F;
+}
+
+.badge-light {
+    height: 30px;
+    width: 80px;
+    background: white;
+    left: 48.2%;
+}
+
+.price-hex {
+    position: absolute;
+    right: 0px;
+    top: 262px;
+    object-fit: contain;
+    width: 250px;
 }
 
 /*footer*/
