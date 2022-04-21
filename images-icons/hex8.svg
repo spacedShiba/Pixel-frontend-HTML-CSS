@@ -1,0 +1,47 @@
+<svg width="244" height="411" viewBox="0 0 244 411" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_152_12087)">
+<g clip-path="url(#clip1_152_12087)">
+<mask id="mask0_152_12087" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="145" width="94" height="108">
+<rect y="145.094" width="93.0118" height="107.401" fill="black"/>
+</mask>
+<g mask="url(#mask0_152_12087)">
+<path d="M92.8727 225.565V172.025L46.5058 145.255L0.138977 172.025L0.138977 225.565L46.5058 252.334L92.8727 225.565Z" fill="#E67112"/>
+</g>
+</g>
+<g clip-path="url(#clip2_152_12087)">
+<g clip-path="url(#clip3_152_12087)">
+<mask id="mask1_152_12087" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="28" y="0" width="142" height="162">
+<rect x="28.888" width="140.245" height="161.941" fill="black"/>
+</mask>
+<g mask="url(#mask1_152_12087)">
+<path d="M168.923 121.334V40.6057L99.0107 0.242004L29.098 40.6057L29.098 121.334L99.0107 161.698L168.923 121.334Z" fill="#0EA7BF"/>
+</g>
+</g>
+</g>
+<g clip-path="url(#clip4_152_12087)">
+<mask id="mask2_152_12087" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="105" y="92" width="276" height="319">
+<rect x="105.431" y="92.422" width="275.521" height="318.144" fill="black"/>
+</mask>
+<g mask="url(#mask2_152_12087)">
+<path d="M380.54 330.792V172.196L243.192 92.898L105.843 172.196L105.843 330.792L243.192 410.091L380.54 330.792Z" fill="#747474"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_152_12087">
+<rect width="380.952" height="410.566" fill="white"/>
+</clipPath>
+<clipPath id="clip1_152_12087">
+<rect width="93.0118" height="107.401" fill="white" transform="translate(0 145.094)"/>
+</clipPath>
+<clipPath id="clip2_152_12087">
+<rect width="140.245" height="161.941" fill="white" transform="translate(28.888)"/>
+</clipPath>
+<clipPath id="clip3_152_12087">
+<rect width="140.245" height="161.941" fill="white" transform="translate(28.888)"/>
+</clipPath>
+<clipPath id="clip4_152_12087">
+<rect width="275.521" height="318.144" fill="white" transform="translate(105.431 92.422)"/>
+</clipPath>
+</defs>
+</svg>
