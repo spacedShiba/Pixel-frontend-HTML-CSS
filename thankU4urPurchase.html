@@ -8,35 +8,44 @@
     <link rel="icon" type="image/x-icon" href="images-icons/hex7.svg">
     <!--Bootstrap Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--navbar script-->
+    <script src="navbarScript.js"></script>
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--mein CSS-->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <nav>
-        <ul class="nav_list">
-          <li id="sm-visible">
-            <a href="home.html"><img src="images-icons/home1.jpg" class="logo"></a>
-          </li>
-    
-          <li>
-            <a href="features.html">Features</a>
-          </li>
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-          <li>
-            <a href="Resources.html">Resources</a>
-          </li>
-          <li>
-            <a href="aboutUs.html">About us</a>
-          </li>
-          <li>
-              <a id="logLink" href="#">Log Out</a>
-          </li> 
-        </ul>
-      </nav>
+  <nav class="nav-bar">
+    <div class="primary-icon">
+      <a href="home.html"><img src="images-icons/home1.jpg" class="logo"></a>
+    </div>
+    <div class="responsive-icon" id="toggle-btn">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images-icons/responsive-nav-dropdown.svg" alt="icon" class="menu">
+      </a>
+    </div>
+      <ul class="nav_list" id="myNav">
+        <li>
+          <a class="active" href="features.html">Features</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="Resources.html">Resources</a>
+        </li>
+        <li>
+          <a href="aboutUs.html">About us</a>
+        </li>
+        <li>
+          <div class="signUpButton">
+              <a class="sign_up" href="#">Sign up</a>
+            </div>
+            <a id="logLink" href="#">Log in</a>
+        </li> 
+      </ul>
+    </nav>
 
     <div class="content">
         <div class="center">
